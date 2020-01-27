@@ -1,0 +1,99 @@
+# Site settings
+baseurl = "https://lmimaroglu.github.io/"
+languageCode = "en-us"
+title = "PVUMC"
+theme = "highlights"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "PVUMC"
+  description = "The offical site for the pioneer valley undergraduate math competition."
+
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "lmimaroglu@umass.edu"
+
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
+  backgroundpersection = true
+
+  # hero Section
+  [params.hero]
+    type = "hero"
+    title = "PVUMC"
+    description = "the Pioneer Valley Undergraduate Math Convention at [UMass Amherst](//math.umass.edu)"
+    buttontext = "i'm interested"
+	
+  # about section
+  [[params.block]]
+    id = "about"
+    type = "text"
+    title = "about pvumc"
+    description = "It's tomorrow the day after today. The speaker is a square. Did you know squares are really just cool rectangles? The speaker is a cool rectangle."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "pic01.jpg"
+
+  # skill section
+  [[params.block]]
+    id = "skills"
+    type = "list"
+    title = "what we're looking for"
+    description = "We are currently looking for speakers and volunteers. If you're interested, click on the hyperlink."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "pic02.jpg"
+
+    [[params.block.item]]
+      icon = "fa-user-tie"
+      title = "[present](//forms.gle/1wMCRhxgN7DgLFRw8)"
+
+    [[params.block.item]]
+      icon = "fa-hands-helping"
+      title = "[volunteer](//forms.gle/eb7awxMmvoyQf6y77)"
+    
+  
+  
+  # footer section
+  # this section includes last block and social icons
+
+  [params.footer]
+    enable = true
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "©2020 LOGAN MIMAROGLU"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
+
+      [[params.footer.copyright.notice]]
+        text = "Icons: [FONTAWESOME](//fontawesome.com/)"
+
+    
