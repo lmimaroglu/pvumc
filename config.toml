@@ -17,7 +17,7 @@ googleAnalytics = ""
   # To provide more meta data for search engings feel free to add a few informations.
   # This lines will be inserted as meta tags.
   name = "PVUMC"
-  description = "The offical site for the pioneer valley undergraduate math competition."
+  description = "The offical site for the pioneer valley undergraduate math conference."
 
   # For a static site it's not possible to provide a contact form. The contact form uses
   # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
@@ -41,9 +41,9 @@ googleAnalytics = ""
   [params.hero]
     type = "hero"
     title = "PVUMC"
-    description = "the Pioneer Valley Undergraduate Math Convention at [UMass Amherst](//math.umass.edu)"
+    description = "the Pioneer Valley Undergraduate Math Conference at [UMass Amherst](//math.umass.edu)"
     buttontext = "i'm interested"
-	
+
   # about section
   [[params.block]]
     id = "about"
@@ -54,15 +54,25 @@ googleAnalytics = ""
     # the picture is stored at static/images/
     picture = "pic01.jpg"
 
+    # about section
+    [[params.block]]
+      id = "keynote"
+      type = "text"
+      title = "invited speaker"
+      description = "put abstract here"
+      buttontext = "next"
+      # the picture is stored at static/images/
+      picture = "pic01.jpg"
+
   # skill section
   [[params.block]]
     id = "skills"
     type = "list"
     title = "what we're looking for"
-    description = "We are currently looking for speakers and volunteers. If you're interested, click on the hyperlink."
+    description = "Attendees are encouraged to register in advance. In addition, we are currently looking for speakers and volunteers. If you're interested, click on the hyperlinks."
     buttontext = "next"
     # the picture is stored at static/images/
-    picture = "pic02.jpg"
+    picture = "pic03.jpg"
 
     [[params.block.item]]
       icon = "fa-user-tie"
@@ -71,9 +81,26 @@ googleAnalytics = ""
     [[params.block.item]]
       icon = "fa-hands-helping"
       title = "[volunteer](//forms.gle/eb7awxMmvoyQf6y77)"
-    
-  
-  
+
+      [[params.block.item]]
+        icon = "fa-location-arrow"
+        title = "[attend](//forms.gle/eb7awxMmvoyQf6y77)" #update link for general attendance
+
+  [[params.block]]
+    id = "contact"
+    type = "contact"
+    title = "Conatct Us"
+    picture = "pic05.jpg"
+
+    [params.block.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      buttontext = "send message"
+
+
+
+
   # footer section
   # this section includes last block and social icons
 
@@ -86,14 +113,11 @@ googleAnalytics = ""
 
     # copyright
     #[params.footer.copyright.notice]
-
-      [[params.footer.copyright.notice]]
-        text = "©2020 LOGAN MIMAROGLU"
+    [[params.footer.copyright.notice]]
+      text = "©2020 LOGAN MIMAROGLU"
 
       [[params.footer.copyright.notice]]
         text = "Design: [HTML5UP](//html5up.net)"
 
       [[params.footer.copyright.notice]]
         text = "Icons: [FONTAWESOME](//fontawesome.com/)"
-
-    
